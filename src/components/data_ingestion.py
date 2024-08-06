@@ -1,6 +1,3 @@
-from cgi import test
-from email import header
-from operator import index
 import os
 import sys
 from src.exception import CustomException
@@ -23,7 +20,6 @@ class DataIngestion:
         logging.info("Enter the data ingestion method or component")
         try:
             location = os.path.join(os.getcwd(),'notebook/data/stud.csv')
-            print(location)
             df = pd.read_csv(location)
             logging.info('Read the dataset as dataframe')
 
