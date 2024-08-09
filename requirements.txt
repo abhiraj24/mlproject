@@ -6,4 +6,5 @@ scikit-learn
 cmake
 catboost
 dill
+Flask
 #-e .
